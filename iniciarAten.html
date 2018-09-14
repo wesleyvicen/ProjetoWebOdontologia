@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Pacientes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <main class="centro">
+        <form class="form">
+            <input id="nome" type="text" placeholder="Nome do Paciente" name="nome" autofocus><br>
+            <input id="data" type="datetime-local" placeholder="Time" name="nome"><br>
+            <textarea id="descricao" class="descricao" type="text" placeholder="Descrição do problema a ser tratado" name="nome" size="140"></textarea><br>
+            <button class="btn" id="btn_atendimento" type="submit" style="cursor:hand" name="atendimento">Iniciar</button>
+        </form>
+
+        <table class="tabela tabelaAtendimento">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data e Hora</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <td colspan="10">Isso é tudo</td>
+            </tfoot>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

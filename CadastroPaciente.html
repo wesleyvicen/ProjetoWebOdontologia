@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro Aluno</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <main class="centro">
+        <form class="form">
+            <input id="nome" type="text" placeholder="Nome" name="nome" autofocus>
+            <input id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome"><br>
+            <input id="cpf" type="number" placeholder="CPF" name="cpf" maxlength="11"><br>
+            <input id="endereco" type="text" placeholder="Endereço" name="endereco">
+            <input id="numero" type="number" placeholder="Número" name="numero"><br>
+            <input id="bairro" type="text" placeholder="Bairro" name="bairro"><br>
+            <input id="cep" type="text" name="cep" size="3" maxlength="5" placeholder="CEP"> - <input id="cep2" placeholder="CEP" type="text" name="cep2" size="3" maxlength="3"><br>
+            <input id="uf" type="text" placeholder="UF" name="uf" maxlength="2"><br>
+            <input id="cidade" type="text" placeholder="Cidade" name="cidade"><br>
+            <input id="municipio" type="text" placeholder="Distrito" name="municipio"><br>
+            <button id="btn_cadastrar" class="btn" type="submit" style="cursor:hand" name="cadastrar">Cadastrar</button>
+        </form>
+
+        <table class="tabela tabelaCadastroCliente">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Número</th>
+                    <th>Bairro</th>
+                    <th>CEP</th>
+                    <th>UF</th>
+                    <th>Cidade</th>
+                    <th>Distrito</th>
+                    <th id="acao">Ação</th>
+                </tr>
+            </thead>
+            <td>Wesley Vicente</td>
+            <td>11951606400</td>
+            <td>Praça Joaquim Nabuco</td>
+            <td>10</td>
+            <td>Centro</td>
+            <td>55850-000</td>
+            <td>PE</td>
+            <td>Vicência</td>
+            <td>Vicência1</td>
+            <td class="remover">Remover</td>
+            <tfoot>
+
+                <td colspan="10">Isso é tudo</td>
+            </tfoot>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/remover.js"></script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# Proposito
+# Propósito
 Projeto foi feito para a disciplica de Desenvolvimento web da Faculdade Nova Roma - FGV
 
 # Linguagens

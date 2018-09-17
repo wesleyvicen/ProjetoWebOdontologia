@@ -1,10 +1,10 @@
-var removerTds = document.querySelectorAll('.remover');
+document.addEventListener('click', function (e) {
 
-removerTds.forEach(function (item) {
-    item.addEventListener('dblclick', function () {
+    if (e.target.className == 'remover') {
         var confirmacao = confirm('Deseja realmente remover este item?')
         if (confirmacao) {
-            item.parentNode.remove();
+            e.target.parentNode.remove();
         }
-    })
+    }
+
 });

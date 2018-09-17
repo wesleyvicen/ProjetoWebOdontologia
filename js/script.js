@@ -17,6 +17,7 @@ if (botao_atendimento) { // criei este If e o proximo para não ficar sempre pux
 }
 
 //Metodo usado para o atendimento
+
 function adicionar_atendimento() {
     var nome = document.querySelector('#nome').value; // Seleciona um elemento, neste caso o ID Nome
     var data = document.querySelector('#data').value;
@@ -43,6 +44,7 @@ function adicionar_atendimento() {
 
 //Metodo usado para o Cadastro que nada mais é que o mesmo do atendimento apenas com mais variaveis.
 function adicionar_cadastro() {
+
     var nome = document.querySelector('#nome').value;
     var sobrenome = document.querySelector('#sobrenome').value;
     var cpf = document.querySelector('#cpf').value;
@@ -69,14 +71,13 @@ function adicionar_cadastro() {
     var td_cidade = document.createElement('td');
     var td_municipio = document.createElement('td');
     var td_remover = document.createElement('td');
-    
 
-    td_nome.textContent = nome +' '+ sobrenome;
+    td_nome.textContent = nome + ' ' + sobrenome;
     td_cpf.textContent = cpf;
     td_endereco.textContent = endereco;
     td_numero.textContent = numero;
     td_bairro.textContent = bairro;
-    td_cep.textContent = cep +'-'+ cep2;
+    td_cep.textContent = cep + '-' + cep2;
     td_uf.textContent = uf;
     td_cidade.textContent = cidade;
     td_municipio.textContent = municipio;
@@ -95,4 +96,5 @@ function adicionar_cadastro() {
     linha.appendChild(td_remover);
 
     tabela.appendChild(linha);
+
 };

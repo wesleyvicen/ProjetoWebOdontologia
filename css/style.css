@@ -1,27 +1,15 @@
 /* RESET */
 
-
-.creditos {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    color: darkgray
-}
-
-.creditos a {
-    color: dimgrey
-}
-
 body {
     margin: 20px 0 0 0;
     padding: 0;
     font-family: Tahoma;
     box-sizing: border-box;
     border: none;
-    outline: none;
     background-color: #f5f5f5
 }
 
+/* PRINCIPAL */
 .corpo {
     width: 100%;
     height: 180px;
@@ -34,13 +22,6 @@ body {
 
 }
 
-.tabela {
-    border: 2px solid white;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
 .centro {
     text-align: center;
     width: 100%;
@@ -49,6 +30,7 @@ body {
 article {
     display: inline-grid;
     margin-bottom: 20px;
+    padding: 0% 1%;
 }
 
 article:hover {
@@ -60,8 +42,75 @@ article span {
     font-weight: 550;
 }
 
-/* Campos de formulário genéricos */
+/*FORMULARIO*/
+textarea {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+}
 
+#cep {
+    width: 6%;
+}
+
+#cep2 {
+    width: 5%;
+}
+
+.btn {
+    border-radius: 12px;
+    width: 330px;
+    height: 45px;
+    margin: 0.5em;
+    background-color: #f48888;
+    color: white;
+    font-weight: 600;
+}
+
+textarea,
+input[type="text"],
+input[type="datetime-local"],
+input[type="search"],
+input[type="number"] {
+    border: 2px #cccccc solid;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+button[type="submit"],
+input[type="search"],
+input[type="number"] {
+    height: 32px;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+textarea:hover,
+input[type="text"]:hover,
+input[type="datetime-local"]:hover,
+input[type="search"]:hover,
+input[type="number"]:hover {
+    background-color: #ddddff;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="datetime-local"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus {
+    background: #ffcccc;
+}
+
+/*TABELAS*/
+
+.tabela {
+    border: 2px solid white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
 
 table {
     border-collapse: collapse;
@@ -98,30 +147,6 @@ tfoot td:hover {
     background-color: #444;
 }
 
-textarea {
-    width: 500px;
-    height: 200px;
-    padding: 20px;
-}
-
-#cep {
-    width: 6%;
-}
-
-#cep2 {
-    width: 5%;
-}
-
-.btn {
-    border-radius: 12px;
-    width: 330px;
-    height: 45px;
-    margin: 0.5em;
-    background-color: #f48888;
-    color: white;
-    font-weight: 600;
-}
-
 #acao {
     background-color: red;
     color: white;
@@ -142,39 +167,14 @@ textarea {
     background-color: #f26464
 }
 
-textarea,
-input[type="text"],
-input[type="datetime-local"],
-input[type="search"],
-input[type="number"] {
-    border: 2px #cccccc solid;
-    border-radius: 10px;
-    padding: 0 20px;
+/*RODAPÉ DA PAGINA*/
+.creditos {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: darkgray
 }
 
-
-input[type="text"],
-input[type="datetime-local"],
-button[type="submit"],
-input[type="search"],
-input[type="number"] {
-    height: 32px;
-    font-family: Tahoma;
-    font-size: 14px;
-}
-
-textarea:hover,
-input[type="text"]:hover,
-input[type="datetime-local"]:hover,
-input[type="search"]:hover,
-input[type="number"]:hover {
-    background-color: #ddddff;
-}
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="datetime-local"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus {
-    background: #ffcccc;
+.creditos a {
+    color: dimgrey
 }

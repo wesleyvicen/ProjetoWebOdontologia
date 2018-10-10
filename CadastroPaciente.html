@@ -11,16 +11,16 @@
 <body>
     <main class="centro">
         <form class="form">
-            <input id="nome" type="text" placeholder="Nome" name="nome" autofocus>
-            <input id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome"><br>
-            <input id="cpf" type="number" placeholder="CPF" name="cpf" maxlength="11"><br>
-            <input id="endereco" type="text" placeholder="Endereço" name="endereco">
-            <input id="numero" type="number" placeholder="Número" name="numero"><br>
-            <input id="bairro" type="text" placeholder="Bairro" name="bairro"><br>
-            <input id="cep" type="text" name="cep" size="5" maxlength="5" placeholder="CEP"> - <input id="cep2" placeholder="CEP" type="text" name="cep2" size="3" maxlength="3"><br>
-            <input id="uf" type="text" placeholder="UF" name="uf" maxlength="2"><br>
-            <input id="cidade" type="text" placeholder="Cidade" name="cidade"><br>
-            <input id="municipio" type="text" placeholder="Distrito" name="municipio"><br>
+            <input id="nome" type="text" placeholder="Nome" name="nome" autofocus required>
+            <input id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome" required><br>
+            <input id="cpf" type="text" placeholder="CPF" name="cpf" size="11" maxlength="11" pattern="[0-9]{11}" title="Three letter country code" required><br>
+            <input id="endereco" type="text" placeholder="Endereço" name="endereco" required>
+            <input id="numero" type="number" placeholder="Número" name="numero" required><br>
+            <input id="bairro" type="text" placeholder="Bairro" name="bairro" required><br>
+            <input id="cep" type="text" placeholder="CEP" name="cep" size="5" maxlength="5" required > - <input id="cep2" placeholder="CEP" type="text" name="cep2" size="3" maxlength="3" required><br>
+            <input id="uf" type="text" placeholder="UF" name="uf" maxlength="2" required><br>
+            <input id="cidade" type="text" placeholder="Cidade" name="cidade" required><br>
+            <input id="municipio" type="text" placeholder="Distrito" name="municipio" required><br>
             <button id="btn_cadastrar" class="btn" type="submit" style="cursor:hand" name="cadastrar">Cadastrar</button>
         </form>
 
@@ -50,14 +50,11 @@
             <td>teste</td>
             <td class="remover">Remover</td>
             <tfoot>
-
                 <td colspan="10">Isso é tudo</td>
             </tfoot>
         </table>
     </main>
-
     <script src="js/remover.js"></script>
-
     <script src="js/script.js"></script>
 
 </body>

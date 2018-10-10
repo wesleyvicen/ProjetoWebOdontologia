@@ -14,6 +14,7 @@ if (botao_atendimento) { // criei este If e o proximo para não ficar sempre pux
         adicionar_cadastro();
 
     });
+
 }
 
 //Metodo usado para o atendimento
@@ -82,7 +83,7 @@ function adicionar_cadastro() {
     td_cidade.textContent = cidade;
     td_municipio.textContent = municipio;
     td_remover.textContent = 'Remover';
-    td_remover.classList.add('remover')
+    td_remover.classList.add('remover');
 
     linha.appendChild(td_nome);
     linha.appendChild(td_cpf);

@@ -6,4 +6,4 @@ Projeto foi feito para a disciplica de Desenvolvimento web da Faculdade Nova Rom
 - CSS
 - JavaScript
 # Acessando projeto hospedado
-<a href = "https://wesleyvicen1535.000webhostapp.com">Clique aqui para acessar</a>
+<a href = "https://wesleyvicen.github.io/ProjetoWebOdontologia/">Clique aqui para acessar</a>
